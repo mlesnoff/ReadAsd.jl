@@ -12,6 +12,8 @@ The core extracting functions of ReadAsd.jl are a port in pure Julia from the **
 [here](https://github.com/pierreroudier/asdreader). Thanks to Pierre Roudier and Etienne Lalibert for their work 
 on the R package.
 
+This package has been developed working on '.asd' files in version >= 8.
+
 ### <span style="color:green"> **Installation** </span> 
 
 To install **ReadAsd** (current version; see the [news](news.md))
