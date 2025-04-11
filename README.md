@@ -2,9 +2,10 @@
 
 ### A Julia package to read ASD binay files of spectra
 
-Read binary data created by the ASD Inc. portable spectrometer instruments, such as the FieldSec (for more information, 
-see <http://www.asdi.com/products/fieldspec-spectroradiometers>). Spectral data can be extracted from the ASD files to 
-reflectance (default), raw (DN), white reference, or radiance. The metadata contained in the ASD files are also extracted. 
+Read **single** binary files created by the ASD Inc. portable spectrometer instruments, such as the FieldSec 
+(for more information, see <http://www.asdi.com/products/fieldspec-spectroradiometers>). The extracted spectral data 
+can be returned as reflectance (default), raw (DN), white reference, or radiance. The metadata contained in the ASD 
+files are also extracted. 
 
 The core extracting functions of ReadAsd.jl are a port in pure Julia from the **R package `asdreader`** 
 (Roudier & Lalibert, 2017), available [here](https://cran.r-project.org/web/packages/asdreader/index.html) and 
