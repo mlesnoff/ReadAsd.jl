@@ -1,0 +1,8 @@
+name = "ReadAsd"
+authors = ["Matthieu Lesnoff <matthieu.lesnoff@gmail.com>"]
+uuid = "8c80f135-bfcb-49c7-9316-adc780aeb689"
+version = "0.0.1"
+
+[deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
