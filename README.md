@@ -1,6 +1,6 @@
 # ReadAsd.jl 
 
-### A Julia package to read ASD binay files of spectra
+### A Julia package to read ASD binary files of spectra
 
 Read **single** binary files created by the ASD Inc. portable spectrometer instruments, such as the FieldSec 
 (for more information, see <http://www.asdi.com/products/fieldspec-spectroradiometers>). The extracted spectral data 
