@@ -25,7 +25,7 @@ https://github.com/pierreroudier/asdreader
 ```julia
 using ReadAsd
 
-path_f = "path/to/your_files"  # path of the directory containing the single files '.asd'
+path_f = "path/to/your/files"  # path of the directory containing the single files '.asd'
 
 res = readsp(path_f) 
 res.X     # DataFrame with the spectral data 

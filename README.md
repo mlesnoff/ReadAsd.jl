@@ -25,9 +25,7 @@ pkg> add https://github.com/mlesnoff/ReadAsd.jl.git
 ```julia
 using ReadAsd
 
-using ReadAsd
-
-path_f = "path/to/your_files"  # path of the directory containing the single files '.asd'
+path_f = "path/to/your/files"  # path of the directory containing the single files '.asd'
 
 res = readsp(path_f) 
 res.X     # DataFrame with the spectral data 
@@ -53,6 +51,6 @@ contact: **matthieu.lesnoff@cirad.fr**
 ### **How to cite**
 
 Lesnoff, M. 2025. ReadAsd: a Julia package to read binary data created by the ASD Inc. portable spectrometer instruments. 
-https://github.com/mlesnoff/Jchemo. UMR SELMET, Univ Montpellier, CIRAD, INRA, Institut Agro, Montpellier, France
+https://github.com/mlesnoff/ReadAsd.jl. UMR SELMET, Univ Montpellier, CIRAD, INRA, Institut Agro, Montpellier, France
 
 
