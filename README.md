@@ -12,12 +12,33 @@ The core extracting functions of ReadAsd.jl are a port in pure Julia from the **
 [here](https://github.com/pierreroudier/asdreader). Thanks to Pierre Roudier and Etienne Lalibert for their work 
 on the R package.
 
-# <span style="color:green"> **Installation** </span> 
+### <span style="color:green"> **Installation** </span> 
 
 To install **ReadAsd** (current version; see the [news](news.md))
 
 ```julia
 pkg> add https://github.com/mlesnoff/ReadAsd.jl.git
+```
+
+### Example of use
+
+```julia
+using ReadAsd
+
+using ReadAsd
+
+path_f = "path/to/your_files"  # path of the directory containing the single files '.asd'
+
+res = readsp(path_f) 
+res.X     # DataFrame with the spectral data 
+res.wl    # Wavelengths (nm)
+res.f     # File names
+
+i = 1     # index of the file
+md = res.md[i]
+md["program_version"]
+md["file_version"]
+md["data_type"]
 ```
 
 ### **Author**

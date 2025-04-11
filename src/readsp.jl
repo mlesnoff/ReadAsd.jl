@@ -23,6 +23,20 @@ https://github.com/pierreroudier/asdreader
 
 ## Examples
 ```julia
+using ReadAsd
+
+path_f = "path/to/your_files"  # path of the directory containing the single files '.asd'
+
+res = readsp(path_f) 
+res.X     # DataFrame with the spectral data 
+res.wl    # Wavelengths (nm)
+res.f     # File names
+
+i = 1     # index of the file
+md = res.md[i]
+md["program_version"]
+md["file_version"]
+md["data_type"]
 ```
 """ 
 function readsp(path::String; type::String = "reflectance")
