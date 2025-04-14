@@ -1,17 +1,18 @@
 """
     readsp(path::String; type::String = "reflectance")
-    Read ASD files in a directory.
+    Read ASD files stored in a directory.
 * `path` : Path to the files.
-* `type` : Type of the spectra returned by the function.
+* `type` : Type of the spectra returned by the function. Possible values are : "reflectance" (default), 
+       "radiance", "raw" and "white_reference".
 
-The function reads all the files '.asd' in the directory `path` and returns a tuple containing:
+The function reads all the files '.asd' available in the directory `path` and returns a tuple containing:
 * `X` : A DataFrame containing the spectra.
 * `wl` : The wavelengths of the spectra.
 * `f` : The names of the files.
 * `md` : A vector of dictionaries containing the metadata of each file.
 
 The function uses the `get_metadata`, `get_spec`, and `process_spectrum!` functions to read and process
-the spectra. These functions are a translation in pure Julia of the core functions of the R package
+the spectra. These functions are a port in pure Julia of the core functions of the R package
 `asdreader` (Roudier & Lalibert, 2017).
 
 ## References
@@ -28,9 +29,9 @@ using ReadAsd
 path_f = "path/to/your/files"  # path of the directory containing the single files '.asd'
 
 res = readsp(path_f) 
-res.X     # DataFrame with the spectral data 
-res.wl    # Wavelengths (nm)
-res.f     # File names
+res.X     # dataFrame with the spectral data 
+res.wl    # wavelengths (nm)
+res.f     # file names of the spectra
 
 i = 1     # index of the file
 md = res.md[i]

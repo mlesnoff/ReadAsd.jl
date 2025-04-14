@@ -30,9 +30,9 @@ using ReadAsd
 path_f = "path/to/your/files"  # path of the directory containing the single files '.asd'
 
 res = readsp(path_f) 
-res.X     # DataFrame with the spectral data 
-res.wl    # Wavelengths (nm)
-res.f     # File names
+res.X     # dataFrame with the spectral data 
+res.wl    # wavelengths (nm)
+res.f     # file names of the spectra
 
 i = 1     # index of the file
 md = res.md[i]
